@@ -4,4 +4,14 @@ source env/bin/activate
 # Deactivate venv:
 deactivate
 
+# Run flask app:
+python3 app.py
+or
+python app.py
+
+# Install equirements/dependancies:
+pip install -r requirements.txt
+
+# Generate new requirements/dependancies file:
+pip freeze > requirements.txt
 
