@@ -1,0 +1,68 @@
+/* Basic reset for margins and padding */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* Full viewport height background */
+  body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    font-family: Arial, sans-serif;
+    background-color: #ccdde2;
+  }
+  
+  /* Sign-up form container styling */
+  .signup-container {
+    width: 100%;
+    max-width: 400px;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    background-color: #ffffff;
+  }
+  
+  /* Title styling */
+  .signup-container h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #333333;
+  }
+  
+  /* Label styling */
+  .signup-container label {
+    display: block;
+    margin-bottom: 5px;
+    color: #555555;
+  }
+  
+  /* Input field styling */
+  .signup-container input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #cccccc;
+    border-radius: 5px;
+  }
+  
+  /* Button styling */
+  .signup-container button {
+    width: 100%;
+    padding: 10px;
+    background-color: #638ebf;
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  /* Button hover effect */
+  .signup-container button:hover {
+    background-color: #4980be;
+  }
+  
