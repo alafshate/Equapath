@@ -1,0 +1,386 @@
+/* Basic reset for margins and padding */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* Full viewport height background */
+  body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    font-family: Arial, sans-serif;
+    background-color: #ccdde2;
+  }
+  
+  /* Sign-up form container styling */
+  .signup-container {
+    width: 100%;
+    max-width: 400px;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    background-color: #ffffff;
+  }
+  
+  /* Title styling */
+  .signup-container h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #333333;
+  }
+  
+  /* Label styling */
+  .signup-container label {
+    display: block;
+    margin-bottom: 5px;
+    color: #555555;
+  }
+  
+  /* Input field styling */
+  .signup-container input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #cccccc;
+    border-radius: 5px;
+  }
+  
+  /* Button styling */
+  .signup-container button {
+    width: 100%;
+    padding: 10px;
+    background-color: #638ebf;
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  /* Button hover effect */
+  .signup-container button:hover {
+    background-color: #4980be;
+  }
+  
+  .signup-container .secondary-button {
+    background-color: #f1f1f1;
+    color: #638ebf;
+    border: 1px solid #638ebf;
+    margin-top: 10px;
+  }
+  
+  .signup-container .secondary-button:hover {
+    background-color: #e0e0e0;
+  }
+  
+
+.new-user-section p {
+  font-size: 14px; 
+  font-weight: normal; 
+  color: #555555; 
+  margin-top: 15px; 
+  text-align: center;
+}
+
+
+.signout-message {
+  font-size: 16px; 
+  margin-bottom: 20px; /* Adds spacing below the message */
+  color: #333333; 
+  text-align: center;
+}
+
+/* Main container styling for the selection page */
+.main-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  margin-top: 50px;
+}
+
+/* Welcome heading styling */
+.main-container h1 {
+  font-size: 36px; /* Larger font size for better emphasis */
+  font-weight: bold;
+  color: #ffffff;
+  margin-bottom: 40px; /* Extra space between the heading and the boxes */
+}
+
+/* Container for Candidate and Recruiter boxes with more spacing */
+.user-selection {
+  display: flex;
+  gap: 60px; /* Increased gap for better spacing between the boxes */
+}
+
+/* Candidate and Recruiter box styling */
+.candidate-box, .recruiter-box {
+  width: 300px; /* Increased width for larger boxes */
+  height: 150px; /* Increased height to make space for menu items */
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  background-color: #ffffff;
+  position: relative; /* Necessary for positioning the hidden menu */
+  overflow: hidden;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+/* Initial text styling (Candidate and Recruiter) */
+.candidate-box h2, .recruiter-box h2 {
+  color: #333333;
+  font-size: 24px;
+  margin: 0;
+  padding-top: 40px; /* Center the text vertically */
+  transition: opacity 0.3s ease; /* Fade out on hover */
+}
+
+/* Hidden menu styling */
+.candidate-box .menu, .recruiter-box .menu {
+  position: absolute;
+  top: 100%; /* Position below the box initially */
+  left: 0;
+  width: 100%;
+  background-color: #ffffff;
+  padding: 10px 0;
+  text-align: center;
+  border-top: 1px solid #cccccc;
+  transition: top 0.3s ease; /* Slide up effect */
+}
+
+/* Button styling within the hidden menu */
+.menu .button {
+  display: block;
+  width: 80%;
+  margin: 10px auto;
+  padding: 8px;
+  background-color: #638ebf;
+  color: white;
+  text-decoration: none;
+  text-align: center;
+  font-weight: bold;
+  border-radius: 5px;
+}
+
+.menu .button:hover {
+  background-color: #4980be;
+}
+
+/* Secondary button styling within the hidden menu */
+.menu .secondary-button {
+  background-color: #f1f1f1;
+  color: #638ebf;
+  border: 1px solid #638ebf;
+}
+
+.menu .secondary-button:hover {
+  background-color: #e0e0e0;
+}
+
+/* Hover effect to slide up the menu */
+.candidate-box:hover .menu, .recruiter-box:hover .menu {
+  top: 0; /* Slide the menu to the top of the box */
+}
+
+.candidate-box:hover h2, .recruiter-box:hover h2 {
+  opacity: 0; /* Fade out the initial text */
+}
+
+.existing-user-section {
+  margin-top: 20px;
+  text-align: center;
+}
+
+.existing-user-section p {
+  font-size: 14px;
+  color: #555555;
+  margin-bottom: 10px;
+}
+
+.secondary-button {
+  background-color: #f1f1f1;
+  color: #638ebf;
+  border: 1px solid #638ebf;
+  padding: 8px 16px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.secondary-button:hover {
+  background-color: #e0e0e0;
+}
+/* Global Styling */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #638ebf; /* Very light, soft background color */
+  margin: 0;
+  padding: 0;
+  color: #333;
+}
+
+/* Dashboard Container */
+.dashboard-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 40px 20px;
+  background-color: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05); /* Soft shadow for a lifted look */
+}
+
+/* Navbar Styling */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #4a90e2;
+  color: white;
+  padding: 15px 20px;
+  border-radius: 8px 8px 0 0; /* Rounded top corners */
+}
+
+.navbar .user-info {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.navbar .dropdown {
+  position: relative;
+}
+
+/* Dropdown Button */
+.dropbtn {
+  background-color: #4a90e2;
+  color: white;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+  padding: 10px;
+  border-radius: 4px;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  right: 0;
+  background-color: white;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+  border-radius: 8px;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  border-bottom: 1px solid #eee;
+}
+
+.dropdown-content a:hover {
+  background-color: #f1f1f1;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+/* Section Titles */
+h2 {
+  color: #333;
+  font-size: 22px;
+  margin-top: 30px;
+  border-bottom: 2px solid #4a90e2;
+  padding-bottom: 5px;
+}
+
+/* Job and Applicant Card Styling */
+.job-list, .applicant-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.job-card, .applicant-card {
+  background-color: rgb(202, 230, 238);
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+  width: 280px;
+  text-align: center;
+  border: 1px solid #e0e0e0;
+  transition: transform 0.2s;
+}
+
+.job-card:hover, .applicant-card:hover {
+  transform: translateY(-5px); /* Lift effect on hover */
+}
+
+.status {
+  font-weight: bold;
+  color: #4a90e2;
+}
+
+/* Progress Bar */
+.progress-bar {
+  width: 100%;
+  background-color: #e0e0e0;
+  border-radius: 8px;
+  overflow: hidden;
+  height: 8px;
+  margin-top: 10px;
+}
+
+.progress {
+  background-color: #4a90e2;
+  height: 100%;
+}
+
+/* Buttons */
+.apply-button, .view-applicants-button, .schedule-interview-button {
+  background-color: #4a90e2;
+  color: white;
+  border: none;
+  padding: 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 10px;
+  font-weight: bold;
+}
+
+.apply-button:hover, .view-applicants-button:hover, .schedule-interview-button:hover {
+  background-color: #357ab7;
+}
+
+
+
+
+
+.flash-messages {
+  list-style-type: none;
+  padding: 0;
+}
+
+.flash-message {
+  margin-bottom: 10px;
+  padding: 10px;
+  border-radius: 4px;
+}
+
+.flash-message.success {
+  background-color: #d4edda;
+  color: #155724;
+}
+
+.flash-message.error {
+  background-color: #f8d7da;
+  color: #721c24;
+}
+
+

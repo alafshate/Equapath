@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Welcome to Equapath</title>
+  <link rel="stylesheet" href="../static/css/styles.css">
+</head>
+<body>
+  <div class="main-container">
+    <!-- Flash Messages -->
+    {% with messages = get_flashed_messages(with_categories=true) %}
+      {% if messages %}
+        <ul class="flash-messages">
+          {% for category, message in messages %}
+            <li class="flash-message {{ category }}">{{ message }}</li>
+          {% endfor %}
+        </ul>
+      {% endif %}
+    {% endwith %}
+    <img src="{{ url_for('static', filename='media/logo.png') }}" alt="Swerv Logo" width="450px">
+    <h1>Welcome to Equapath!</h1>
+    <div class="user-selection">
+      <!-- Candidate Box -->
+      <div class="candidate-box">
+        <h2>Applicant</h2>
+        <div class="menu">
+          <a href="{{ url_for('login') }}" class="button">Sign In</a>
+          <a href="{{ url_for('signup') }}" class="button secondary-button">Sign Up</a>
+        </div>
+      </div>
+      
+      <!-- Recruiter Box -->
+      <div class="recruiter-box">
+        <h2>Recruiter</h2>
+        <div class="menu">
+          <a href="{{ url_for('login_recruiter') }}" class="button">Sign In</a>
+          <a href="{{ url_for('signup_recruiter') }}" class="button secondary-button">Sign Up</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
+
+
