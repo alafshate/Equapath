@@ -13,6 +13,8 @@ Session(app)
 def home():
     return render_template('index.html')
 
+
+
 # Applicant Signup Route
 @app.route('/signup', methods=['GET', 'POST'])
 def signup():
@@ -31,9 +33,9 @@ def signup():
             return render_template('applicant_signup.html')
         
         # Check if password is strong
-        if not is_strong_password(password):
-            flash("Password must be at least 8 characters long, with at least one uppercase letter, one lowercase letter, one digit, and one special character.", "error")
-            return render_template('applicant_signup.html')
+        # if not is_strong_password(password):
+        #     flash("Password must be at least 8 characters long, with at least one uppercase letter, one lowercase letter, one digit, and one special character.", "error")
+        #     return render_template('applicant_signup.html')
         
         # Create and add the applicant
         applicant = Applicant(first_name, last_name, email, password, resume, phone)
@@ -64,9 +66,9 @@ def signup_recruiter():
             return render_template('recruiter_signup.html')
         
         # Check if password is strong
-        if not is_strong_password(password):
-            flash("Password must be at least 8 characters long, with at least one uppercase letter, one lowercase letter, one digit, and one special character.", "error")
-            return render_template('recruiter_signup.html')
+        # if not is_strong_password(password):
+        #     flash("Password must be at least 8 characters long, with at least one uppercase letter, one lowercase letter, one digit, and one special character.", "error")
+        #     return render_template('recruiter_signup.html')
         
         # Create and add the recruiter
         recruiter = Recruiter(first_name, last_name, email, password, company_name, phone)
