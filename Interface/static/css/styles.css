@@ -66,3 +66,151 @@
     background-color: #4980be;
   }
   
+  .signup-container .secondary-button {
+    background-color: #f1f1f1;
+    color: #638ebf;
+    border: 1px solid #638ebf;
+    margin-top: 10px;
+  }
+  
+  .signup-container .secondary-button:hover {
+    background-color: #e0e0e0;
+  }
+  
+
+.new-user-section p {
+  font-size: 14px; 
+  font-weight: normal; 
+  color: #555555; 
+  margin-top: 15px; 
+  text-align: center;
+}
+
+
+.signout-message {
+  font-size: 16px; 
+  margin-bottom: 20px; /* Adds spacing below the message */
+  color: #333333; 
+  text-align: center;
+}
+
+/* Main container styling for the selection page */
+.main-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  margin-top: 50px;
+}
+
+/* Welcome heading styling */
+.main-container h1 {
+  font-size: 36px; /* Larger font size for better emphasis */
+  font-weight: bold;
+  color: #333333;
+  margin-bottom: 40px; /* Extra space between the heading and the boxes */
+}
+
+/* Container for Candidate and Recruiter boxes with more spacing */
+.user-selection {
+  display: flex;
+  gap: 60px; /* Increased gap for better spacing between the boxes */
+}
+
+/* Candidate and Recruiter box styling */
+.candidate-box, .recruiter-box {
+  width: 300px; /* Increased width for larger boxes */
+  height: 150px; /* Increased height to make space for menu items */
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  background-color: #ffffff;
+  position: relative; /* Necessary for positioning the hidden menu */
+  overflow: hidden;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+/* Initial text styling (Candidate and Recruiter) */
+.candidate-box h2, .recruiter-box h2 {
+  color: #333333;
+  font-size: 24px;
+  margin: 0;
+  padding-top: 40px; /* Center the text vertically */
+  transition: opacity 0.3s ease; /* Fade out on hover */
+}
+
+/* Hidden menu styling */
+.candidate-box .menu, .recruiter-box .menu {
+  position: absolute;
+  top: 100%; /* Position below the box initially */
+  left: 0;
+  width: 100%;
+  background-color: #ffffff;
+  padding: 10px 0;
+  text-align: center;
+  border-top: 1px solid #cccccc;
+  transition: top 0.3s ease; /* Slide up effect */
+}
+
+/* Button styling within the hidden menu */
+.menu .button {
+  display: block;
+  width: 80%;
+  margin: 10px auto;
+  padding: 8px;
+  background-color: #638ebf;
+  color: white;
+  text-decoration: none;
+  text-align: center;
+  font-weight: bold;
+  border-radius: 5px;
+}
+
+.menu .button:hover {
+  background-color: #4980be;
+}
+
+/* Secondary button styling within the hidden menu */
+.menu .secondary-button {
+  background-color: #f1f1f1;
+  color: #638ebf;
+  border: 1px solid #638ebf;
+}
+
+.menu .secondary-button:hover {
+  background-color: #e0e0e0;
+}
+
+/* Hover effect to slide up the menu */
+.candidate-box:hover .menu, .recruiter-box:hover .menu {
+  top: 0; /* Slide the menu to the top of the box */
+}
+
+.candidate-box:hover h2, .recruiter-box:hover h2 {
+  opacity: 0; /* Fade out the initial text */
+}
+
+.existing-user-section {
+  margin-top: 20px;
+  text-align: center;
+}
+
+.existing-user-section p {
+  font-size: 14px;
+  color: #555555;
+  margin-bottom: 10px;
+}
+
+.secondary-button {
+  background-color: #f1f1f1;
+  color: #638ebf;
+  border: 1px solid #638ebf;
+  padding: 8px 16px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.secondary-button:hover {
+  background-color: #e0e0e0;
+}
