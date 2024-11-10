@@ -1,0 +1,61 @@
+<link rel="stylesheet" href="../static/css/styles.css">
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Recruiter Dashboard</title>
+  <link rel="stylesheet" href="../static/css/styles.css">
+</head>
+<body>
+  <div class="dashboard-container">
+    <!-- Navbar with User Info and Logout Dropdown -->
+    <nav class="navbar">
+      <div class="user-info">Welcome, [Recruiter Name]</div>
+      <div class="dropdown">
+        <button class="dropbtn">Profile ▾</button>
+        <div class="dropdown-content">
+          <a href="signout.html" class="logout">Log Out</a>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Job Listings Section -->
+    <section class="section-job-listings">
+      <h2>Your Job Listings</h2>
+      <div class="job-list">
+        <div class="job-card">
+          <h3>Backend Developer</h3>
+          <p>Applicants: <span class="applicant-count">25</span></p>
+          <button class="view-applicants-button">View Applicants</button>
+        </div>
+        <div class="job-card">
+          <h3>Frontend Developer</h3>
+          <p>Applicants: <span class="applicant-count">15</span></p>
+          <button class="view-applicants-button">View Applicants</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- Anonymized Applicant Matches Section -->
+    <section class="section-applicant-matches">
+      <h2>Applicants for Backend Developer</h2>
+      <div class="applicant-list">
+        <div class="applicant-card">
+          <p>Match Score: <span class="match-score">92%</span></p>
+          <p>Skills: Java, Spring, Microservices</p>
+          <p>Experience: 5 years</p>
+          <button class="schedule-interview-button">Schedule Interview</button>
+        </div>
+        <div class="applicant-card">
+          <p>Match Score: <span class="match-score">85%</span></p>
+          <p>Skills: Node.js, Express, REST APIs</p>
+          <p>Experience: 3 years</p>
+          <button class="schedule-interview-button">Schedule Interview</button>
+        </div>
+      </div>
+    </section>
+  </div>
+</body>
+</html>

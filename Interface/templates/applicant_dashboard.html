@@ -1,0 +1,63 @@
+<link rel="stylesheet" href="../static/css/styles.css">
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Applicant Dashboard</title>
+  <link rel="stylesheet" href="../static/css/styles.css">
+</head>
+<body>
+  <div class="dashboard-container">
+    <!-- Navbar with User Info and Logout Dropdown -->
+    <nav class="navbar">
+      <div class="user-info">Hello, [Applicant Name]</div>
+      <div class="dropdown">
+        <button class="dropbtn">Profile ▾</button>
+        <div class="dropdown-content">
+          <a href="signout.html" class="logout">Log Out</a>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Applied Jobs Section -->
+    <section class="section-applied-jobs">
+      <h2>Jobs You've Applied For</h2>
+      <div class="job-list">
+        <div class="job-card">
+          <h3>Software Engineer</h3>
+          <p>Status: <span class="status">In Review</span></p>
+          <div class="progress-bar">
+            <div class="progress" style="width: 40%;"></div>
+          </div>
+        </div>
+        <div class="job-card">
+          <h3>Data Scientist</h3>
+          <p>Status: <span class="status">Interview Scheduled</span></p>
+          <div class="progress-bar">
+            <div class="progress" style="width: 70%;"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Recommended Jobs Section -->
+    <section class="section-recommended-jobs">
+      <h2>Recommended Jobs for You</h2>
+      <div class="job-list">
+        <div class="job-card recommended">
+          <h3>Machine Learning Engineer</h3>
+          <p>Similarity to your applications: 85%</p>
+          <button class="apply-button">Apply Now</button>
+        </div>
+        <div class="job-card recommended">
+          <h3>Data Analyst</h3>
+          <p>Similarity to your applications: 78%</p>
+          <button class="apply-button">Apply Now</button>
+        </div>
+      </div>
+    </section>
+  </div>
+</body>
+</html>
